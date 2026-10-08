@@ -92,3 +92,52 @@ print(a == b)
 a = 2570
 b = 2570
 print(a is b)
+
+
+# int и float можно смешивать -> результат float
+
+# float — приблизительный (
+print(0.1 + 0.2 == 0.30000000000000004)
+
+# Операции с str
+# ------------------------------------------
+print("abc")
+print('abc')
+# + конкатенация
+a = "abc"
+b = "xyz"
+print(a + b)
+# * повторение "ab" * 3
+print("za" * 33)
+# len()
+print("    asd123\b\b\nf\aasdf\b    ")
+print(len("    asd\nfasdf   566\t3434 "))
+a1 = 45.6
+print(a1)
+# 1a = 45.6
+# print(1a)
+afs = 4
+a = None
+None1 = 34
+a = 13
+print(a)
+A = 10
+print(A)
+print('I don\'t speak English')
+print("I don't speak English")
+# s[i] индекс "abc"[1]
+# s[i:j] срез "abcde"[1:4] "bcd"
+# s[i:j:k] срез с шагом "abcde"[::2] "ace"
+# s[::-1] переворот "abc"[::-1] "cba"
+# in / not in "bc" in "abcd"
+# s.upper()
+# s.lower()
+# s.strip()
+# s.replace(a, b)
+# s.split(sep)
+# s.find(sub)
+# s.startswith/endswith "abc".startswith("a")
+# s.isdigit() / isalpha()
+# 
+# f-strings
+
