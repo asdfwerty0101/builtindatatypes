@@ -125,19 +125,107 @@ A = 10
 print(A)
 print('I don\'t speak English')
 print("I don't speak English")
+a = 'это строка'
+
+print(a)
+# number = int(input("Введите число:"))
+# print(type(number))
+# name = input("Введите свое имя:")
+# print(type(name))
+name = "abcd"
 # s[i] индекс "abc"[1]
+print(name[0])
+print(name[1])
+print(name[2])
+print(name[3])
+print(len(name))
 # s[i:j] срез "abcde"[1:4] "bcd"
+mystring = "abcde"
+print(mystring[1:3])
+print(mystring[2:4])    # cd
 # s[i:j:k] срез с шагом "abcde"[::2] "ace"
+mystring = "ABCDEFGHI"
+print(mystring[1:7:2])
 # s[::-1] переворот "abc"[::-1] "cba"
+print(mystring[::-1])
+print(mystring[::-2])
 # in / not in "bc" in "abcd"
+print("BC" in mystring)
+print("xyz4" not in "dsafxyzlkj")
+mystring = "wetrwqer"
+
 # s.upper()
+print("abcd".upper())
+print(mystring.upper())
 # s.lower()
+print("ASFDasdfEFE".lower())
 # s.strip()
+print("   ASFDasdfEFE  ".strip() + "|")
+mystring = "    12345    "
+print(mystring.strip() + "|")
+
 # s.replace(a, b)
+mystring = "kjhwerkjhwqerYUYqeuiur"
+print(mystring.replace("qe", "**"))
+print(mystring)
 # s.split(sep)
+mystring = "молоко, хлеб, сыр, колбаса"
+mylist = mystring.split(",")
+print("script execution is finished")
 # s.find(sub)
+mystring = 'Wer1246kjlwerIkj'
+print(mystring.find("1"))
+print("script execution is finished")
 # s.startswith/endswith "abc".startswith("a")
+mystring = "AbcdJLKJE2323"
+is_starts_with_letter_A = mystring.startswith("Abc3")
+print(is_starts_with_letter_A)
+is_ends = mystring.endswith("23")
+print(is_ends)
 # s.isdigit() / isalpha()
-# 
+mystring = "123478"
+print(mystring.isdigit())
+
+mystring = "abcd"
+print(mystring.isalpha())
 # f-strings
+name = "Daulet"
+apple_qnt = 4
+# f-string
+mystring = f"My name is {name}. У меня есть {apple_qnt} яблок"
+mystring = f'asdf sadf sadf'
+print(mystring)
+mystring = "My name is " + name + ". У меня есть " + \
+           str(apple_qnt) + " яблок"
+print(mystring)
+mystring = ("My name is " + name + ". У меня есть " +
+           str(apple_qnt) + " яблок")
+print(mystring)
+
+# if
+try:
+    print("Сейчас будем проверять")
+    num = int(input("Введите целое число (int):"))
+    print("Все ок")
+except ValueError as e:
+    print("Вы ввели не число!")
+    print(str(e))
+    exit(10)
+except Exception as e:
+    print(str(e))
+    exit(12)
+
+if num >= 0:
+    print(f"Число {num} положительное")
+    print("Это ветка для True")
+
+    if num > 10:
+        print(f"Число {num} больше 10")
+
+else:
+    print(f"Число {num} отрицательное")
+    print("Это ветка для False")
+print("Программа завершена")
+import this
+
 
